@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //uppercase
+        let str = prompt("enter a name")
+        console.log("the uppercase of the given name is:",str.toUpperCase());
+        //lowercase
+        let str1 = prompt("enter a name")
+        console.log("the lowercase of the given name is:",str.toLowerCase());
+        //reverse string
+        let str2 = prompt("enter a name")
+        let str3 = str2.split("").reverse().join("");
+        console.log("the reverse of the given name is:",str3);
+        //username validation
+        let str4 = prompt("enter username")
+        if (str4.length >= 5 && str4.length <= 15) {
+            console.log("username is valid")
+        }
+        else {
+            console.log("not valid");
+
+        }
+        //email formatter
+        let str5 = prompt("enter first name").toLowerCase();
+        let str6 = prompt("enter last name").toLowerCase();
+        let str7 = "@gmail.com"
+        console.log(str5.concat(".", str6, str7));
+        //word counter
+        let str8 = prompt("enter a sentence")
+        console.log(str8.split(" ").length);
+        //palindrome checker
+        let str9 = prompt("enter a name");
+        let str10 = str9.split("").reverse().join("");
+        console.log(str10);
+        if (str9 == str10) {
+            console.log("the above given name is: palindrome");
+        }
+        else {
+            console.log("it is not a palindrome");
+
+        }
+    </script>
+
+</body>
+
+</html>
